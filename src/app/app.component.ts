@@ -7,10 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
     
-  listQuotes: any[] = [];
+  public listQuotes: any[] = [];
 
   addQuote( quote: any ) {
     this.listQuotes.push( quote );
+  }
+
+  deleteQuote( i: number ) {
+    this.listQuotes.splice( i, 1 );
   }
 
 }

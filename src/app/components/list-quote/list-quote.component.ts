@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-list-quote',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ListQuoteComponent implements OnInit {
 
+  @Input() listQuotes: any;
+  @Output() removeQuote = new EventEmitter<number>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
+  deleteQuote( i: number ) {}
 
 }

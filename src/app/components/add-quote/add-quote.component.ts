@@ -13,6 +13,8 @@ export class AddQuoteComponent implements OnInit {
   public symptoms: string = '';
   public formIsEmpty: boolean = false;
 
+  @Output() newQuote = new EventEmitter();
+
   constructor() { }
 
   ngOnInit(): void {
@@ -29,6 +31,7 @@ export class AddQuoteComponent implements OnInit {
       time: this.time,
       symptoms: this.symptoms
     }
+    this.newQuote.emit( QUOTE );
     this.formIsEmpty = false;
     this.resetQuote();
   }

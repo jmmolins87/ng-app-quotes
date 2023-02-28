@@ -15,7 +15,6 @@ body {
     .content-box-component {
         background: rgba(255, 255, 255, .2);
         backdrop-filter: blur(10px);
-        min-height: 200px;
         max-height: 625.59px;
         width: 100%;
         border: 3px solid rgb(255, 255, 255);
@@ -33,9 +32,21 @@ body {
     label {
         font-weight: 700;
     }
+    .icon-trash {
+        color: #ff0000;
+        cursor: pointer;
+    }
 }
 
+// ** Utilities **
+.strong {
+    font-weight: 700 !important;
+}
+.no-border {
+    border: none !important;
+}
 
+// ** Custom scrollbar **
 /* width */
 ::-webkit-scrollbar {
     width: 10px;
