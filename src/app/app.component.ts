@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'emptyangularproject';
+    
+  listQuotes: any[] = [];
+
+  addQuote( quote: any ) {
+    this.listQuotes.push( quote );
+  }
+
 }
