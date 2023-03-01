@@ -5,11 +5,11 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-12 col-lg-6 mt-3">
+    <div class="col-12 col-lg-5 mt-3">
       <app-add-quote (newQuote)="addQuote( $event )"></app-add-quote>
     </div>
-    <div class="col-12 col-lg-6 mt-3">
-      <app-list-quote [listQuotes]="listQuotes"></app-list-quote>
+    <div class="col-12 col-lg-7 mt-3">
+      <app-list-quote [listQuotes]="listQuotes" (removeQuote)="deleteQuote( $event )"></app-list-quote>
     </div>
   </div>
 </div>

@@ -15,6 +15,8 @@ export class ListQuoteComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  deleteQuote( i: number ) {}
+  deleteQuote( i: number ) {
+    this.removeQuote.emit( i );
+  }
 
 }
